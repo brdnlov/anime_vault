@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
@@ -26,6 +27,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
+        <Analytics />
       </body>
     </html>
   );
